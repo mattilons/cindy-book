@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>libreria cindybook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<body>
+    <!--aqui la barrita que va arriba-->
+    <nav class="navbar navbar-expand-lg bg-warning">  <!--bg(background color) warning es el color amarillo, tambien esta:bg-primary/bg-secondary/bg-success/bg-danger/bg-info/etc...-->
+  <div class="container-fluid"> <!--este container es el icono del libro-->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+      <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+    </svg>
+    <a class="navbar-brand" href="http://127.0.0.1:3000/index.html#">Cindy books</a> <!--aqui lo que aparecera en la pagina-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:3000/contactos.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:3000/contactos.html">Contactos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--aqui los carousel(imagenes) que cambian cada 10sg-->
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.ecestaticos.com/jwaQEHJhTkGo_M35fXlbaPy9KpA=/1x205:1516x1058/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F415%2F1e3%2F4c4%2F4151e34c4bf9b42d494e02dbfee0db70.jpg" class="d-block w-100" width="1" height="800"> <!--imagen-->
+            <div class="container">
+              <div class="carousel-caption text-end">
+                  <h1>Revisa Nuestros Productos.</h1> <!--comentario dentro de la imagen-->
+                  <!--buscador dentro de la imagen-->
+                  <p>
+                      <a class="btn btn-lg btn-primary" href="http://127.0.0.1:3000/productos.html">Ver nuestros Productos</a>
+                  </p>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://static.theclinic.cl/media/2024/02/29-155715_th3e_Ilustracion_Santiago_En_100_Palabras_Libros.jpg" class="d-block w-100" height="800">
+            <div class="carousel-caption text-end">
+              <h1>QUIENES SOMOS!!.</h1> <!--comentario dentro de la imagen-->
+              <!--buscador dentro de la imagen-->
+              <p>
+                  <a class="btn btn-lg btn-primary" href="http://127.0.0.1:3000/contactos.html">Informate</a>
+              </p>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.informateoposiciones.es/images/info-oposiciones/accede-al-foro-informate-oposiciones.jpg" class="d-block w-100"  height="800">
+            <div class="carousel-caption text-end">
+              <h1>Contactate Con Nosotros.</h1> <!--comentario dentro de la imagen-->
+              <!--buscador dentro de la imagen-->
+              <p>
+                  <a class="btn btn-lg btn-primary" href="http://127.0.0.1:3000/contactos.html">CONTACTATE</a>
+              </p>
+          </div>
+          </div>
+        </div>
+        <!--mensajes entre las imagenes-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev"> <!--boton atras-->
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next"> <!--boton adelante-->
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container mt-5"> <!--mt significa margin top(1al5)--> <!--col-lg es el espacio entre un objeto-->
+          <!-- CARDS o TARJETAS-->
+    <hr><!--titulo "lee y aprende"-->
+    <div  id='aprende1' class="container">
+    <h1 class="text-center"> <br> <i class="fa fa-bolt" aria-hidden="true"></i>
+        Lee y aprende  <i class="fa fa-bolt" aria-hidden="true"></i>
+    </h1>
+    <!--tarjeta 1-->
+    <div class="row justify-content-center">
+        
+      <div class="col-12 col-md-4 col-lg-6 mt-2"> <!--(col-12= pantalla chica)(col-md=pantalla mediana)(mol-lg=pantalla completa)-->
+        <!--en este caso las tarjetas cuando la pantalla sea pequeña mediran 12 y cuando sea pantalla compl sera de 6-->
+      <div class="card">
+      <div class="card-body">
+          <h5 class="card-title">Por qué Leer?   <i class="fa fa-language" aria-hidden="true"></i>   </h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Trinidad Galvez (especialista en libros)</h6>
+          <p class="card-text">La lectura estimula vías neuronales y activa la memoria, lo que beneficia la salud cerebral, te permite expandir tu vocabulario, así como mejorar las habilidades expresivas: escritura y ortografía.
+          </p>
+
+      </div>
+      </div>
+      </div>
+      <!--tarjeta 2-->
+      <div class="col-12 col-md-4 col-lg-6 mt-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">como empezar por:  <i class="fa fa-language" aria-hidden="true"></i>   </h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Mattias Casas</h6>
+                <p class="card-text">Elige un libro que te motive y que se adapte a tus gustos y nivel de lectura. Puedes ver nuestros productos gratis en nuestra barra superior para encontrar tu libro ideal, Mucha suerte!!. </p>
+            </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-6 mt-2">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">como empezar por:  <i class="fa fa-language" aria-hidden="true"></i>   </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Andres Cavieres</h6>
+                  <p class="card-text">Actualmente con las nuevas tecnología de información y comunicación nos facilitan a través de varios programas hacer varias tipos de lectura, pero desafortunadamente existen jóvenes que en lugar de aprovechar estas lecturas que para su edad les parece aburrida y poco provechosa, los adolescentes solo usan las nuevas tecnologías para juegos que en ocasiones bloquean sus pensamientos y por lo tantos los conocimientos. </p>
+              </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-6 mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Beneficios:   <i class="fa fa-language" aria-hidden="true"></i>   </h5>
+                    <p class="card-text">La lectura es un hábito que puede mejorar las condiciones sociales y humanas de cualquier lector, el leer permite pensar con reflexión y desarrollar los aspectos cognitivos del cerebro lo que ayuda a ejercitar todas las células y estar siempre activos para cualquier actividad que se realice en la vida cotidiana.La lectura permite escapar de las tensiones cotidianas, bajar el estrés, desarrollar habilidades cognitivas, activa la memoria a corto y largo plazo</p>
+                </div>
+            </div>
+            </div>
+        <!--tarjeta 3-->
+
+        <div class="col-12 col-md-4 col-lg-6 mt-2">
+        <div class="card">
+                
+            <div class="card-body">
+                <h5 class="card-title">Exitos infantiles:  <i class="fa fa-desktop" aria-hidden="true"></i>    </h5>
+                <img src="https://th.bing.com/th/id/R.ccb3a36bc9a19442077df07121236ad7?rik=kN0VVfjzA2Wyug&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+            </div>
+        </div>
+        </div>
+        <!--tarjeta 4-->
+        <div class="col-12 col-md-4 col-lg-6 mt-2">
+          <div class="card">
+                  
+              <div class="card-body">
+                  <h5 class="card-title">Exitos infantiles:  <i class="fa fa-desktop" aria-hidden="true"></i>    </h5>
+                  <img src="https://cdn.agapea.com/Austral/La-metamorfosis-y-otros-relatos-de-animales-i6n10602620.jpg" class="card-img-top" alt="...">
+              </div>
+          </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <h4 id="comien">Nuestra Comienzo</h4>
+        <br>
+        <p>Desde su fundación en 2006, Librería Online ha sido un faro para los amantes de los libros. Nacimos del deseo de conectar a las personas con historias que inspiran, educan y entretienen. A lo largo de los años, hemos evolucionado con la tecnología y las preferencias de nuestros lectores, ofreciendo una experiencia de compra en línea que es tanto intuitiva como enriquecedora.</p>
+        <p>Hemos pasado de ser una pequeña tienda en línea a una comunidad vibrante de lectores. Nos enorgullece nuestra selección curada de títulos que abarca desde los clásicos intemporales hasta las más recientes publicaciones, incluyendo autores emergentes y gemas literarias que esperan ser descubiertas.</p>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h4 id="mision">Nuestra vision</h4>
+        <br>
+        <p>Miramos hacia el futuro con la visión de expandir nuestro impacto en la comunidad lectora global. Aspiramos a ser más que una librería, convirtiéndonos en un espacio donde las historias cobran vida y los lectores encuentran un hogar literario.</p>
+        
+        <p>Nuestra dedicación es fomentar un amor por la lectura que trascienda generaciones, ofreciendo siempre una colección diversa y accesible que inspire y enriquezca las vidas de nuestros lectores.
+        </p>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h4 id="hist">Nuestro objetivo</h4>
+        <br>
+        <p>En Librería Online, creemos que la lectura debe ser accesible para todos. Nuestra misión es facilitar el acceso a un mundo de historias, conocimiento y entretenimiento para personas de todas las edades y gustos. Trabajamos incansablemente para ofrecer una experiencia de usuario amigable, permitiendo a nuestros clientes encontrar fácilmente su próxima lectura favorita.</p>
+        <p>Nos comprometemos a mantener una plataforma inclusiva y adaptativa que refleje la diversidad de nuestras audiencias y las maravillas del mundo literario. Seguimos innovando para garantizar que cada visita a nuestra página sea una experiencia placentera y satisfactoria.</p>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        
+        <hr><!--titulo "para info de libros"-->
+        <div  id='libro1' class="container">
+          <div class="generalindex">
+        <h1 class="text-center"> <br> <i class="fa fa-bolt" aria-hidden="true"></i>
+            Libros Destacados:  <i class="fa fa-bolt" aria-hidden="true"></i>
+        </h1>
+        <!-- tres columnas con texto en carousel-->
+        <div class="row">
+            <div class="col-lg-4"> <!--col-lg aqui es el espacio de los texto-->
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagen de casilla1">
+              <h2 class="fw-normal">El Principito</h2><!--titulo de la casilla o enunciado en negrita-->
+              <p>"Érase una vez un principito que vivía en un planeta apenas más grande que él y que tenía necesidad de un amigo…" Para aquellos que comprenden la vida, esto.</p> <!--texto-->
+              
+            </div>
+            <div class="col-lg-4">
+              <img src="https://www.penguinlibros.com/cl/1780237/el-extranjero.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagen de casilla2">
+              <h2 class="fw-normal">El Extranjero</h2>
+              <p>Meursault, un hombre serio que se muestra pasivo e indiferente ajeno al mundo que le rodea.se asocia a la filosofía del absurdo y al existencialismo.</p>
+              
+            </div>
+            <div class="col-lg-4">
+              <img src="https://www.penguinlibros.com/cl/1746192/don-quijote-de-la-mancha-coleccion-alfaguara-clasicos.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagen de casilla3">
+              <h2 class="fw-normal">Don Quijote De La Mancha</h2>
+              <p>Alonso Quijano, un hombre que de tanto leer novelas acaba enloqueciendo y creyendo ser un caballero, nombrándose como don Quijote de la Mancha.</p>
+              
+            </div>
+            <div class="col-lg-4"> <!--col-lg aqui es el espacio de los texto-->
+              <img src="https://cdn.agapea.com/Austral/La-metamorfosis-y-otros-relatos-de-animales-i6n10602620.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagen de casilla1">
+              <h2 class="fw-normal">La Metamorfosis</h2><!--titulo de la casilla o enunciado en negrita-->
+              <p>La historia trata sobre Gregorio Samsa, cuya repentina transformación en un enorme insecto dificulta cada vez más la comunicación de su entorno social.</p> <!--texto-->
+            
+            </div>
+            <div class="col-lg-4">
+              <img src="https://th.bing.com/th/id/R.ccb3a36bc9a19442077df07121236ad7?rik=kN0VVfjzA2Wyug&pid=ImgRaw&r=0" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagen de casilla2">
+              <h2 class="fw-normal">Mi Lucha</h2>
+              <p>Libro autobiográfico con una exposición de sus ideas propias y un manifiesto de la ideología política del nacionalsocialismo. </p>
+      
+            </div>
+            <div class="col-lg-4">
+              <img src="https://www.penguinlibros.com/cl/1776222/diario-de-anne-frank.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Imagen de casilla3">
+              <h2 class="fw-normal">Diario De Ana Frank</h2>
+              <p>diario íntimo en donde dejó constancia de los casi dos años y medio que pasó ocultándose de los nazis en Ámsterdam, con su familia y cuatro.</p>
+              
+            </div>
+            
+            <br><a class="btn btn-secondary" href="http://127.0.0.1:3000/productos.html">Ver todos los libros »</a> <!--barra interaccionable "ver libros"-->
+        </div>
+        </div>
+      
+        <br>
+
+        <!--el footer es la barra con informacion al final de las paginas-->
+        <!--iconos de ig y twtter sacados de boostrap-->
+        <br>
+        <div class="card text-center">
+          <div class="card-footer">
+            ¡Gracias por visitar nuestra pagina!
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">¿Buscas un libro especial?</h5>
+            <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg> instagram: @cindybooks <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+            </svg> twitter:@cindybooktw.</p>
+            <p class="card-text">Contactate con nosotros.</p>
+           
+            <a href="http://127.0.0.1:3000/contactos.html" class="btn btn-primary">contactate</a>
+          </div>
+        </div>
+        </div>
+        
+</body>
+</html>
